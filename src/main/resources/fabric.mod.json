@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "glassworld",
+  "version": "${version}",
+  "name": "GlassWorld",
+  "description": "I am lazy to change the icon, but leave a star!",
+  "authors": [
+    "Wang-Junhao0220@github"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/glassworld",
+    "sources": "https://github.com/Wang-Junhao0220/GlassWorld"
+  },
+  "license": "GPL v3",
+  "icon": "assets/glassworld/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.junhax.glassworld.GlassWorld"
+    ],
+    "client": [
+      "com.junhax.glassworld.GlassWorldClient"
+    ]
+  },
+  "mixins": [
+    "glassworld.mixins.json",
+    {
+      "config": "glassworld.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "jei"
+  }
+}

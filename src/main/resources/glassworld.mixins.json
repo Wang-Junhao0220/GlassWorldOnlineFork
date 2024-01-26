@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "package": "com.junhax.glassworld.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "DamageEnchantmentMixin",
+    "FrostWalkerEnchantmentMixin",
+    "KnockbackEnchantmentMixin",
+    "LuckEnchantmentMixin",
+    "ProtectionEnchantmentMixin",
+    "QuickChargeEnchantmentMixin",
+    "UnbreakingEnchantmentMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
